@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{BaseURL}}/auth/logaout"
+method: GET
+order: 4000
