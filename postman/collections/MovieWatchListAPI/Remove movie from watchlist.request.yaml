@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{BaseURL}}/watchlist/07050a2c-6e30-4a70-8a83-b5748757181c"
+method: DELETE
+body:
+  type: json
+  content: ""
+order: 5457

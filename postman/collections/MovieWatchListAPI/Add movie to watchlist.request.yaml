@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{BaseURL}}/watchlist"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"movieId\":\"968d3fab-63ea-436f-b534-947c5fe60b14\",\r
+
+    \    \"status\":\"PLANNED\",\r
+
+    \    \"rating\":8.8\r
+
+    }"
+order: 6000

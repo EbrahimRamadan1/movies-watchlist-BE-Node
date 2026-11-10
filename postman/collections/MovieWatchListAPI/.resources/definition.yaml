@@ -1,3 +1,4 @@
 $kind: collection
+name: MovieWatchListAPI
 variables:
-  BaseURL: 'http://localhost:5001'
+  BaseURL: "http://localhost:5001"

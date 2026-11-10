@@ -1,4 +1,4 @@
 $kind: http-request
-url: "{{BaseURL}}/auth/logaout"
-method: GET
+url: "{{BaseURL}}/auth/logout"
+method: POST
 order: 4000

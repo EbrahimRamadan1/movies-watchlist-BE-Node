@@ -3,11 +3,5 @@ url: "{{BaseURL}}/auth/login"
 method: POST
 body:
   type: json
-  content: "{\r
-
-    \    \"email\":\"er@er.er\",\r
-
-    \    \"password\":\"P@$$w0rd3\"\r
-
-    }"
+  content: '{"email":"wel@wel.wel","password":"P@$$w0rd3"}'
 order: 3000

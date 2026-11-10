@@ -1,8 +1,10 @@
+import cookieParser from "cookie-parser";
 import { config } from "dotenv";
 import express from "express";
 import { connectDb, disConnectDb } from "./config/db.js";
 import AuthRoutes from "./routes/AuthRoutes.js";
 import MovieRoutes from "./routes/MovieRoutes.js";
+import WatchListRoutes from "./routes/WatchlistRoutes.js";
 
 config();
 connectDb();
@@ -11,9 +13,11 @@ const app = express();
 // Body parsing Middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(cookieParser());
 
 app.use("/movies", MovieRoutes);
 app.use("/auth", AuthRoutes);
+app.use("/watchlist", WatchListRoutes);
 
 const PORT = 5001;
 const server = app.listen(PORT, () => {
